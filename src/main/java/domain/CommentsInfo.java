@@ -1,6 +1,6 @@
 package domain;
 
 public class CommentsInfo {
-    int count;
-    boolean canreply;
+    private int countComments;
+    //private boolean canReply;
 }
