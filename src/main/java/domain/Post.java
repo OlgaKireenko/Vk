@@ -3,18 +3,25 @@ package domain;
 public class Post {
     private int postID;
     private String authorID;
-    private String textBody;
-    private String infoComments;
-    private int countLike;
-    private int countRepost;
-    private int countViews;
-    private int date;
-    private boolean privateStatus; // who can browse only friends or not
     private int ownerID; // хозяин аккаунта в котором сделан пост
     private int created_by; //ID admin
+    private int date;
+    private String textBody;
     private int replyOwnerId;
     private int replyPostId;
+    private boolean privateStatus; // who can browse only friends or not
+    private CommentsInfo infoComments;
+    private CopyRight copyRight;
+    private Likes infoLike;
+    private Repost infoRepost;
+    private Views infoViews;
     private String postType;
-    private String geo; //отметка на карте, привязка к месту
+    private PostSource infoPostSource;
+    private Geo infoGeo; //отметка на карте, привязка к месту
+    private int signerID;
+    private boolean isFavorite;
+    private Donat infoDonat;
+    private int postponedID;
+    private boolean markedAsAds;
 
 }

@@ -3,12 +3,16 @@ package manager;
 import domain.Post;
 
 public class PostManager {  //создаю класс
-    private PostManager postManager; // создаю объект из класса
-    public Post[] search[] { // должен быть метод search
+    private Post[] search(int ownerID, String domain, String query, boolean ownersOnly,
+                          int count, int offset, int extended, String fields) {
+
+        // должен быть метод search
         // some logic
         return null;
     }
-    public void delete {  //метод delete
 
+    public void delete(int ownerID, int postID) {
+        //some logic
     }
+
 }
